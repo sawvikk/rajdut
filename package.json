@@ -1,0 +1,34 @@
+{
+  "name": "rajdut",
+  "version": "1.0.0",
+  "description": "Chat-Application-Node-Learn-from-Sumit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development nodemon index.js",
+    "prod": "NODE_ENV=production nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sawvikk/rajdut.git"
+  },
+  "author": "Sawvik_Kar_Dipto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sawvikk/rajdut/issues"
+  },
+  "homepage": "https://github.com/sawvikk/rajdut#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0"
+  }
+}
