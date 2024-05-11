@@ -3,7 +3,7 @@ Title : index file for making chat application
 Description: the file that runs initially once the Node.js code is executed. 
 Author: Sawvik Kar Dipto
 FirstDate: 2/05/2024
-LastDate: 2/05/2024
+LastDate: 6/05/2024
 */
 
 //dependencies 
@@ -18,8 +18,6 @@ const {notFoundHandler,errorHandler} = require('./middleWares/common/errorHandle
 const loginRouter = require('./router/loginRouter'); 
 const userRouter = require('./router/userRouter'); 
 const inboxRouter = require('./router/inboxRouter'); 
-
-
 
 const app = express(); 
 dotenv.config();
@@ -60,4 +58,11 @@ app.listen(process.env.PORT,()=>{
 }); 
 
 
-
+/*
+git init 
+git checkout -b day-2
+git add .
+git commit -m "day-2 of making chat app "
+git remote add origin https://github.com/sawvikk/rajdut
+git push origin day-2
+*/

@@ -14,7 +14,7 @@ function errorHandler(err,req,res,next){
     res.status(err.status||500);
     
     if(res.locals.html){
-        res.render("error",{title:"Error Page",error:res.locals.error});
+        res.render("error",{title:"Error Page"});
     }
     else{
         res.json(res.locals.error); 
