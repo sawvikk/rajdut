@@ -10,12 +10,13 @@ const {
   addUserValidator,
   addUserValidationHandler,
 } = require("../middleWares/Users/userValidators");
+const {checkLogin, redirectLoggedIn} = require('../middleWares/common/checkLogin'); 
 
 //router scaffolding
 const router = express.Router();
 
 //login page
-router.get("/", decorateHtmlResponse("Users"), getUsers);
+router.get("/", decorateHtmlResponse("Users"), checkLogin , getUsers);
 
 router.post("/", avatarUpload, addUserValidator, addUserValidationHandler, addUser);
 
